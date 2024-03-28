@@ -1,3 +1,4 @@
 # nodejs
 - step first run the command npm i --save
-- step second run the command node index
+- successfully install npm packeges then run node index
+- server start on port 3001
