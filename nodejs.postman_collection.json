@@ -1,0 +1,97 @@
+{
+	"info": {
+		"_postman_id": "3bef3cc4-13e4-4eb7-baf5-aa25d2c5fa3e",
+		"name": "Tecknotreve-nodejs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28166245"
+	},
+	"item": [
+		{
+			"name": "create-user",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "auth-token",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\":\"Ramdas302  \",\n    \"name\":\"ramdas ravindra jadhav\",\n    \"password\":\"ramdas123\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/create-user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"create-user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "auth",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\":\"Ramdas302\",\n    \"password\":\"ramdas123\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/auth",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"auth"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get-details",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVU0VSSUQiOiJSYW1kYXMzMDIiLCJpYXQiOjE3MTE2NTg5MjUsImV4cCI6MTcxMTY2MjUyNX0.Bre5G3_aY1J8iHn9DpNj4yg-nrtunE2H-8zaadw1WLc",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3001/get-details",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"get-details"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
